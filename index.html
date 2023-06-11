@@ -1,51 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>SUPREMO FOGÃO</title>
 </head>
 
 <body>
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    -->
-        
-    <div class="container"> <!--MENU HORIZONTAL-->
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">SERVIÇOS</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">CADASTRO</a></li>
-                <li><a href="#">ENTRAR</a></li>
-            </ul>
-        </nav>
 
-        <div class="content">
-            <h1>Bem-vindo ao </h1>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+  <header class="container"> <!--antes era div-->
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="#">INÍCIO</a></li>
+        <li><a href="#">CARDÁPIO</a></li>
+        <li><img src="./img/ICONE.png" alt=""></li>
+        <li><a href="#">RESERVAS</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="content">
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/sucos.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/LOGO_EIDTADA - Copia.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/LOGO_original.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    </div> <!--Fazer uma abertura legal, com passagem de fotos do lugar, pratos servidos, buffet-->
-
-    <!--
-    <div>
-        <h1>TESTE</h1>
-        <button type="button" class="btn btn-outline-warning">Warning</button>
     </div>
-    -->
+  </header> <!--antes fechava a div-->
+
+  <footer>
+    <div class="BLOCO-FOOTER">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./img/LOGO_footer.png" alt="Logo do Restaurante">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Restaurante SUPREMO FOGÃO. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 
